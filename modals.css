@@ -1,0 +1,109 @@
+.modal-detail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+  display: none;
+  /* overflow: auto; */
+  z-index: 1;
+}
+
+.active {
+  display: flex;
+  opacity: 1;
+}
+
+.info-section {
+  display: flex;
+  align-items: center;
+  background: #141414;
+  height: 750px;
+  width: 1400px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.info {
+  padding: 30px;
+}
+
+.info img {
+  width: 350px;
+  border-radius: 18px;
+}
+
+.info h1 {
+  font-size: 40px;
+  padding: 20px 0;
+  color: white;
+}
+
+.info h2 {
+  font-size: 27px;
+  color: white;
+  font-weight: 400;
+}
+
+.overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 200;
+}
+.overview-info::first-line {
+  color: gold;
+  font-size: 22px;
+}
+.info-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.info-btn .add-fav,
+.info-btn .remove-fav {
+  border: 2px solid gold;
+  border-radius: 16px;
+  padding: 10px;
+  background-color: transparent;
+  margin-top: 40px;
+  font-size: 16px;
+  color: silver;
+}
+
+.info-btn .close-btn {
+  font-size: 50px;
+  background-color: transparent;
+  font-weight: bold;
+  border: none;
+  color: crimson;
+  margin-top: 50px;
+}
+
+.info-btn .add-fav:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.info-btn .remove-fav:active {
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.info-btn .close-btn:active {
+  background-color: gold;
+  transform: translateY(5px);
+}
+.overview iframe {
+  margin-bottom: 30px;
+}
